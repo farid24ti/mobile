@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Farid-24TIF</string>
+    <string name="verif">Verification</string>
+    <string name="koder_berhasil">Kode Berhasil Dikirim!</string>
+    <string name="periksa">Silahkan Periksa Nomor Anda</string>
+
+</resources>
