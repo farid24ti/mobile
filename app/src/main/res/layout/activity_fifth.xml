@@ -44,7 +44,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#D64B54"
-                android:text="WebView" />
+                android:text="WebView"
+                app:icon="@drawable/ic_back"
+                app:iconGravity="textTop"
+                app:iconTint="#F0F0F0"/>
+
 
             <!-- Tambahkan konten panjang supaya bisa di-scroll -->
             <TextView
