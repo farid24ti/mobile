@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.farid_24tif.databinding.ActivityMainBinding
 import com.example.farid_24tif.pertemuan_4.FourthActivity
+import com.example.farid_24tif.pertemuan_5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
 
+            startActivity(intent)
+        }
+        binding.btnToFifth.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
             startActivity(intent)
         }
     }
