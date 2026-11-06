@@ -6,6 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Home.HomeFragment">
 
+    <View
+        android:id="@+id/background_header"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_header_wave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -17,51 +26,69 @@
         app:subtitleTextColor="@android:color/white"
         app:titleTextColor="@android:color/white"
         app:layout_scrollFlags="scroll|enterAlways"/>
-    <Button
-        android:id="@+id/btnToFourth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
-        android:text="Pertemuan 4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat Datang"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnToFourth"
+        app:layout_constraintBottom_toTopOf="@+id/gridPertemuan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.779" />
 
-    <Button
-        android:id="@+id/btnToFifth"
-        android:layout_width="wrap_content"
+    <!-- Grid 2 kolom: 4-5, 6-7, lalu 10 di tengah -->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridPertemuan"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#34B35A"
-        android:text="Pertemuan 5"
+        android:layout_marginTop="264dp"
+        android:padding="16dp"
+        app:columnCount="2"
+        app:useDefaultMargins="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToFourth" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnToSixth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#F57C00"
-        android:text="Pertemuan 6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToFifth" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToFourth"
+            android:text="Pertemuan 4"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToFifth"
+            android:backgroundTint="#34B35A"
+            android:text="Pertemuan 5"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToSixth"
+            android:backgroundTint="#F57C00"
+            android:text="Pertemuan 6"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToSeventh"
+            android:backgroundTint="#FFC107"
+            android:text="Pertemuan 7"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToTen"
+            android:backgroundTint="#FF5722"
+            android:minWidth="160dp"
+            android:text="Pertemuan 10"
+            app:layout_columnSpan="2"
+            app:layout_gravity="center_horizontal" />
+
+    </androidx.gridlayout.widget.GridLayout>
 
     <Button
         android:id="@+id/btnLogout"
@@ -73,16 +100,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnToSeventh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#FF5722"
-        android:text="Pertemuan 7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToSixth" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.farid_24tif.Home.pertemuan_10.TenthActivity
 import com.example.farid_24tif.Home.pertemuan_4.FourthActivity
 import com.example.farid_24tif.Home.pertemuan_5.FifthActivity
 import com.example.farid_24tif.Home.pertemuan_6.SplashScreenActivity
@@ -53,6 +54,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToSeventh.setOnClickListener {
             val intent = Intent(requireContext(), SeventhActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToTen.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
             startActivity(intent)
         }
 

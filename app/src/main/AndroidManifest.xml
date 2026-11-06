@@ -13,8 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Farid24TIF">
-
-
         <activity
             android:name=".Home.pertemuan_6.SplashScreenActivity"
             android:exported="true">
@@ -62,6 +60,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".BaseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan_10.TenthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
