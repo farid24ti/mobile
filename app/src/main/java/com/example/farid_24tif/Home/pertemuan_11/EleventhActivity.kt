@@ -34,7 +34,7 @@ class EleventhActivity : AppCompatActivity() {
         }
 
         // 1. Inisialisasi Adapter
-        val tabsAdapter = TenthTabsAdapter(this)
+        val tabsAdapter = EleventhTabsAdapter(this)
 
         // 2. Set adapter ke ViewPager2
         binding.viewPager.adapter = tabsAdapter
@@ -59,6 +59,14 @@ class EleventhActivity : AppCompatActivity() {
                     val badge = tab.getOrCreateBadge()
                     badge.isVisible = true
                     badge.number = 5
+                }
+                2 -> {
+                    tab.text = "Tab C"
+                    //Tambah Icon
+                    tab.icon = ContextCompat.getDrawable(  this, R.drawable.ic_home)
+                    //Tambah Badge dengan nomor
+                    val badge = tab.getOrCreateBadge()
+                    badge.isVisible = true
                 }
             }
         }.attach()
