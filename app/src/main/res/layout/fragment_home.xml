@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.779" />
 
-    <!-- Grid 2 kolom: 4-5, 6-7, lalu 10 di tengah -->
+    <!-- Grid 2 kolom: 4-5, 6-7, 10-11 -->
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridPertemuan"
         android:layout_width="match_parent"
@@ -83,10 +83,16 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnToTen"
             android:backgroundTint="#FF5722"
-            android:minWidth="160dp"
             android:text="Pertemuan 10"
-            app:layout_columnSpan="2"
-            app:layout_gravity="center_horizontal" />
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToEleventh"
+            android:backgroundTint="#E91E63"
+            android:text="Pertemuan 11"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
 
     </androidx.gridlayout.widget.GridLayout>
 

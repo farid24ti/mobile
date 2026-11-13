@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.farid_24tif.Home.pertemuan_10.TenthActivity
+import com.example.farid_24tif.Home.pertemuan_11.EleventhActivity
 import com.example.farid_24tif.Home.pertemuan_4.FourthActivity
 import com.example.farid_24tif.Home.pertemuan_5.FifthActivity
 import com.example.farid_24tif.Home.pertemuan_6.SplashScreenActivity
@@ -59,6 +60,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToTen.setOnClickListener {
             val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToEleventh.setOnClickListener {
+            val intent = Intent(requireContext(), EleventhActivity::class.java)
             startActivity(intent)
         }
 
