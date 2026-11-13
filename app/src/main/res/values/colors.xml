@@ -6,4 +6,11 @@
     <color name="warna_button">#BA2929</color>
     <color name="bg">#ADD8E6</color>
     <color name="bg2">#102699</color>
+    <color name="abu_gelap">#444447</color>
+
+    <!-- Warna fragment tutorial -->
+    <color name="tutorial_bg1">#64B5F6</color>
+    <color name="tutorial_bg2">#AED581</color>
+    <color name="tutorial_bg3">#4DB6AC</color>
+    <color name="tutorial_text">#263238</color>
 </resources>
